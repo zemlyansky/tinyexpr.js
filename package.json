@@ -10,11 +10,17 @@
     "prepare-wasm": "node prepare-wasm.js",
     "build": "npm run clean && npm run mkdirs && make build && npm run prepare-wasm && npm run test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemlyansky/tinyexpr.js"
+  },
   "keywords": [
+    "expressions",
     "eval",
     "parser",
     "compiler",
-    "webassembly"
+    "web-assembly",
+    "wasm"
   ],
   "author": "Anton Zemlyansky",
   "license": "MIT",
