@@ -1,0 +1,26 @@
+{
+  "name": "tinyexpr",
+  "version": "0.0.1",
+  "description": "Tiny expression parser, compiler, and evaluation engine based on WebAssembly",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | faucet",
+    "clean": "rimraf wasm && rimraf wrapper",
+    "mkdirs": "mkdir wasm && mkdir wrapper",
+    "prepare-wasm": "node prepare-wasm.js",
+    "build": "npm run clean && npm run mkdirs && make build && npm run prepare-wasm && npm run test"
+  },
+  "keywords": [
+    "eval",
+    "parser",
+    "compiler",
+    "webassembly"
+  ],
+  "author": "Anton Zemlyansky",
+  "license": "MIT",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "rimraf": "^3.0.2",
+    "tape": "^4.13.2"
+  }
+}
