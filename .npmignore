@@ -1,3 +1,4 @@
 node_modules/
+tinyexpr/
 *.swp
 npm-debug.log

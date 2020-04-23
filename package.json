@@ -1,6 +1,6 @@
 {
   "name": "tinyexpr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tiny expression parser, compiler, and evaluation engine based on WebAssembly",
   "main": "index.js",
   "scripts": {
